@@ -33,7 +33,7 @@ Em anexo está o arquivo POI.postman_collection, usado para executar todos os m�
 
 [*Clique aqui para baixar o Postman.*](https://www.getpostman.com/)
 
-[*Clique aqui para baixar o arquivo de importação do Postman*](https://github.com/Elvisley/xy-inc/POI.postman_collection)
+[*Clique aqui para baixar o arquivo de importação do Postman*](https://raw.githubusercontent.com/Elvisley/xy-inc/master/POI.postman_collection)
 
 
 ## Executando o projeto pelo Jar
