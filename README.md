@@ -1,19 +1,19 @@
 # Instruções para execução
 
-1 - Você deve ter instalado o maven 3.0 na sua maquina
+1 - Voce deve ter instalado o Java 1.8 acima
+[*Clique aqui para baixar o Java.*]( http://www.oracle.com/technetwork/pt/java/javase/downloads/jre8-downloads-2133155.html)
 
-Link para download => https://maven.apache.org/install.html
+2 - Você deve ter instalado o maven 3.0 na sua maquina
+[*Clique aqui para baixar o maven.*](https://maven.apache.org/install.html)
 
-2 - Acesse o diretorio do projeto e execute o comando 
+3 - Apos instalar as duas dependencias acima, acesse o diretorio do projeto e execute o comando 
 
 ```
-mvn clean install
-
 mvn install
 
 ```
 
-3 - rodar o projeto
+4 - Apos a instalacao dos pacotes do maven , acesse o diretorio do projeto e execute o comando abaixo
 
 ```
 mvn spring-boot:run	
@@ -21,12 +21,16 @@ mvn spring-boot:run
 
 ## Executando os teste
  
+Acesse o diretorio do projeto e execute o comando abaixo 
+ 
 ```
 mvn test
 ```
 
 ## Executar os metodos utilizando Postman
 
-Em anexo esta o arquivo POI.postman_collection, usado executar todos os metodos da aplicação direto pelo Postman.
+Em anexo esta o arquivo POI.postman_collection, usado para executar todos os metodos da aplicação direto pelo Postman.
 
-Link para download => https://www.getpostman.com/
+[*Clique aqui para baixar o Postman.*](https://www.getpostman.com/)
+
+[*Clique aqui para baixar o arquivo de importacao do Postman*](https://github.com/Elvisley/xy-inc/POI.postman_collection)
