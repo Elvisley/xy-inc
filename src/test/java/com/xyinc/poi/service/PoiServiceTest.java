@@ -1,12 +1,8 @@
 package com.xyinc.poi.service;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import java.util.List;
-
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -39,14 +35,15 @@ public class PoiServiceTest extends PoiApplicationTests {
 		
 	}
 	
+	@Test
 	public void testFilterPoi() {
 		
-		List<Poi> poisFilter = this.poiService.filter(20, 12, 10);
+		List<Poi> poisFilter = this.poiService.filter(20, 10, 10);
 		
-		assertTrue(poisFilter.get(0).getName() == "Lanchonete");
-		assertTrue(poisFilter.get(1).getName() == "Joalheria");
-		assertTrue(poisFilter.get(2).getName() == "Pub");
-		assertTrue(poisFilter.get(3).getName() == "Supermercado");
+		assertEquals(poisFilter.get(0).getName(),"Lanchonete");
+		assertEquals(poisFilter.get(1).getName(),"Joalheria");
+		assertEquals(poisFilter.get(2).getName(),"Pub");
+		assertEquals(poisFilter.get(3).getName(),"Supermercado");
 		
 		assertTrue(poisFilter.size() >= 4);
 		
