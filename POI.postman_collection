@@ -73,7 +73,7 @@
 					"enabled": true
 				}
 			],
-			"url": "localhost:8080/api/v1/poi/filter?coordinateX=10&dmax=10&coordinateY=1",
+			"url": "localhost:8080/api/v1/poi/filter?coordinateX=20&dmax=10&coordinateY=10",
 			"queryParams": [
 				{
 					"key": "coordinateX",
@@ -162,14 +162,14 @@
 				},
 				{
 					"key": "coordinateX",
-					"value": "29",
+					"value": "50",
 					"description": "",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "coordinateY",
-					"value": "10",
+					"value": "2",
 					"description": "",
 					"type": "text",
 					"enabled": true
