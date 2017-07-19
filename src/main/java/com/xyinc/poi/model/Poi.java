@@ -37,7 +37,17 @@ public class Poi implements Serializable{
 	@Min(0)
 	private Integer coordinateY;
 	
-	
+	public Poi() {
+		super();
+	}
+
+	public Poi(String name, Integer coordinateX, Integer coordinateY) {
+		super();
+		this.name = name;
+		this.coordinateX = coordinateX;
+		this.coordinateY = coordinateY;
+	}
+
 	public Long getId() {
 		return id;
 	}

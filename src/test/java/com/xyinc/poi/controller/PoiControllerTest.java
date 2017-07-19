@@ -30,9 +30,6 @@ public class PoiControllerTest extends PoiApplicationTests {
 	@Autowired
 	private TestRestTemplate testRestTemplate;
 	
-	/**
-	 * Metodo responsavel por validar a requisicao de todos os pontos de interesses cadastrados 
-	 */
 	@Test
 	public void testGetFindAllPoi() {
 	
@@ -42,9 +39,7 @@ public class PoiControllerTest extends PoiApplicationTests {
 		
 	}
 	
-	/**
-	 * Metodo responsavel por validar a requisicao para cadastro de um novo ponto de referencia
-	 */
+	
 	@Test
 	public void testInsertPoi() {
 		
@@ -61,11 +56,8 @@ public class PoiControllerTest extends PoiApplicationTests {
 		
 	}
 	
-	/**
-	 * Metodo responsavel por validar a requisicao para cadastro de um novo ponto de referencia com campos obrigatorio nao enviados
-	 */
 	@Test
-	public void testExceptionInsertPoi() {
+	public void testFieldRequiredNotSendInsertPoi() {
 		
 		MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
 		map.add("name", "Games");
@@ -77,9 +69,6 @@ public class PoiControllerTest extends PoiApplicationTests {
 		
 	}
 	
-	/**
-	 * Metodo responsavel por validar a requisicao para filtrar os pontos de interesses
-	 */
 	@Test
 	public void testFilterPoi() {
 		
@@ -94,6 +83,21 @@ public class PoiControllerTest extends PoiApplicationTests {
 		
 		assertThat(response.getStatusCode(), equalTo(HttpStatus.OK));
 				
+	}
+	
+	@Test
+	public void testFieldRequiredNotSendFilterPoi() {
+		UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(URL.concat("/filter"))
+		        .queryParam("coordinateX", "20")
+		        .queryParam("dmax", "");
+		
+		String url = builder.build().encode().toUri().toString();
+
+		ResponseEntity<String> response = this.testRestTemplate.getForEntity(url, String.class);
+		
+		System.out.print(response.getBody().toString());
+		
+		assertThat(response.getStatusCode(), equalTo(HttpStatus.BAD_REQUEST));
 	}
 	
 	

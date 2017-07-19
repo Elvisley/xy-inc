@@ -1,0 +1,189 @@
+{
+	"id": "929b9a28-6ba2-913a-bfa0-cb3e796b3be1",
+	"name": "POI",
+	"description": "",
+	"order": [
+		"b571e565-c3eb-9f40-cd85-61737c98e1be",
+		"40971fc5-02c1-e106-e141-f17020981486",
+		"59af72b5-eef9-c0c5-95d7-b7e4bea75b5e"
+	],
+	"folders": [],
+	"timestamp": 1500298035502,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "40971fc5-02c1-e106-e141-f17020981486",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/api/v1/poi",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "name",
+					"value": "Games",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "coordinateX",
+					"value": "29",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "coordinateY",
+					"value": "10",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500299011802,
+			"name": "localhost:8080/api/v1/poi",
+			"description": "Listando todos os pontos de interesses cadastrados",
+			"collectionId": "929b9a28-6ba2-913a-bfa0-cb3e796b3be1",
+			"responses": []
+		},
+		{
+			"id": "59af72b5-eef9-c0c5-95d7-b7e4bea75b5e",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/api/v1/poi/filter?coordinateX=10&dmax=10&coordinateY=1",
+			"queryParams": [
+				{
+					"key": "coordinateX",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "dmax",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "coordinateY",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "name",
+					"value": "Games",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "coordinateX",
+					"value": "29",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "coordinateY",
+					"value": "10",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500299949857,
+			"name": "localhost:8080/api/v1/poi",
+			"description": "Pesquisando pontos de referencia por proximidade",
+			"collectionId": "929b9a28-6ba2-913a-bfa0-cb3e796b3be1",
+			"responses": []
+		},
+		{
+			"id": "b571e565-c3eb-9f40-cd85-61737c98e1be",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/api/v1/poi",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "Games",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "coordinateX",
+					"value": "29",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "coordinateY",
+					"value": "10",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500298978060,
+			"name": "localhost:8080/api/v1/poi",
+			"description": "Cadastrando um ponto de interesse",
+			"collectionId": "929b9a28-6ba2-913a-bfa0-cb3e796b3be1",
+			"responses": []
+		}
+	]
+}

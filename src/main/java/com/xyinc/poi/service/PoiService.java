@@ -60,4 +60,8 @@ public class PoiService {
 		return listFilter;
 				
 	}
+	
+	public void delete(Long id) {
+		this.poiRepository.delete(id);
+	}
 }
