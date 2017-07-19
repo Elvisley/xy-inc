@@ -77,7 +77,7 @@
 			"queryParams": [
 				{
 					"key": "coordinateX",
-					"value": "10",
+					"value": "20",
 					"equals": true,
 					"description": "",
 					"enabled": true
@@ -91,7 +91,7 @@
 				},
 				{
 					"key": "coordinateY",
-					"value": "1",
+					"value": "10",
 					"equals": true,
 					"description": "",
 					"enabled": true
